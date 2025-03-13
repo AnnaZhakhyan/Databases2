@@ -3,6 +3,6 @@ A repository for MangoDB to help the participants complete the practical part of
 
 ##Contents
 
--[Presentation]() </br>
--[Practical]() </br>
--[Summary]() </br>
+- [Presentation]()
+- [Practical]()
+- [Summary]()
