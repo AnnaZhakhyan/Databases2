@@ -1,0 +1,4 @@
+- oplog explanation
+- clusters
+- reduce text size
+- reduce history and economical info
