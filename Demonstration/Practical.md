@@ -59,7 +59,7 @@ Here we determine to group the results by item names and calculate their total s
 ```
 </br>
 Now the preview results already look better with item and sales. 
-However, you will notice, the results are still unsorted, so we add another stage and select ```$sort`` and enter this in the field:</br>
+However, you will notice, the results are still unsorted, so we add another stage and select ```$sort``` and enter this in the field:</br>
 
 ```
 {
@@ -67,7 +67,7 @@ However, you will notice, the results are still unsorted, so we add another stag
 }
 ```
 </br>
-the -1 sorts in descending order, a 1 in ascending. Alternatively totalSold also has the same effect.  As you can see in the preview, the results are now nicely formatted and sorted. Before clicking ```run `` to see all results, save the queries and name it. 
+the -1 sorts in descending order, a 1 in ascending. Alternatively totalSold also has the same effect.  As you can see in the preview, the results are now nicely formatted and sorted. Before clicking ```run ``` to see all results, save the queries and name it. 
 </br></br>
 To get information helping you to optimise queries you can select Explain.
 </br></br>
