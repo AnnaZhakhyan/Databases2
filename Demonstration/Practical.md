@@ -130,7 +130,7 @@ Another example to visualise is a sphere </br>
 </br>
 
 ### resources
-https://www.mongodb.com/docs/atlas/getting-started/
-https://www.mongodb.com/docs/atlas/sample-data/
-https://www.mongodb.com/docs/atlas/atlas-ui/collections/#shard-a-collection
+https://www.mongodb.com/docs/atlas/getting-started/ </br>
+https://www.mongodb.com/docs/atlas/sample-data/  </br>
+https://www.mongodb.com/docs/atlas/atlas-ui/collections/#shard-a-collection  </br>
 
