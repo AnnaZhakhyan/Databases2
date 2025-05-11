@@ -4,5 +4,5 @@ A repository for MangoDB to help the participants complete the practical part of
 ## Contents
 
 - [Presentation]()
-- [Demonstration]()
+- [Demonstration](./Demonstration/Practical.md)
 - [Summary]()
