@@ -3,6 +3,6 @@ A repository for MangoDB to help the participants complete the practical part of
 
 ## Contents
 
-- [Presentation]()
+- [Presentation](https://github.com/AnnaZhakhyan/Databases2/blob/main/mongoDB.pdf)
 - [Demonstration](./Demonstration/Practical.md)
 - [Summary]()
