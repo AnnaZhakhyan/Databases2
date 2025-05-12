@@ -23,9 +23,6 @@ In order to now get data into your cluster, you once more return to Atlas and se
 Select the ``` Load a Sample Dataset ``` option. After again click the option ```Load Sample Data```. Now it will load, a short time. Once finished, you can see an overview of the data in Atlas. If you now click ```Refresh```on the top right in Compass, you can see all the different sample data to the left. 
 
 
-## Sharding a Cluster
-This is unfortunately a paid feature, but can is explained [here](https://www.mongodb.com/docs/manual/tutorial/deploy-shard-cluster/#enable-sharding-for-a-database) in detail.
-
 ## Aggregation Pipelines
 Even though it can be done just as well in Atlas, I will use Compass for this. Everything remains the same on Atlas. 
 First select one of the sample datasets recently added, like ```sample_supplies```. Now select a collection, in this case ```sales```. You now see all Documents in the Collection. Above, in the search field you can enter queries like ```{ "items.price": { $gt: 100 } }``` to in this case, filter for all sales above 100. But since simple CRUD is of no interest for this Demonstration, we will select the ```Aggregations``` tab.
