@@ -8,8 +8,8 @@
 
 
 ### Cluster:
- [](https://www.mongodb.com/resources/products/fundamentals/clusters)
- [](	https://www.mongodb.com/resources/products/fundamentals/mongodb-cluster-setup)
+ [Clusters](https://www.mongodb.com/resources/products/fundamentals/clusters)
+ [SetUp](	https://www.mongodb.com/resources/products/fundamentals/mongodb-cluster-setup)
 ### Oplog:
 [Replica set Oplog](https://www.mongodb.com/docs/manual/core/replica-set-oplog/)
 ### Sharding
