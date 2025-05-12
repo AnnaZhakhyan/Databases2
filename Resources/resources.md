@@ -15,3 +15,5 @@
 
 ### Election of new Primary
 [Replica Set Elections](https://www.mongodb.com/docs/manual/core/replica-set-elections/)
+<br/><br/><br/><br/><br/>
+[Back to README](https://github.com/AnnaZhakhyan/Databases2/blob/main/README.md)
