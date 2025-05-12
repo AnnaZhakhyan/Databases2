@@ -1,7 +1,7 @@
 # MongoDB Demonstration
 
 ## Creating a Cluster
-In order to create a cluster, you first have to create a account on [MongoDB atlas](https://www.mongodb.com/products/platform/atlas-database)
+In order to create a cluster, you first have to either [host a MongoDB instance yourself](https://www.mongodb.com/try/download/community) or create an Account on [MongoDB atlas](https://www.mongodb.com/products/platform/atlas-database)
 After creating an Account by clicking the ```create cluster``` button within the link, you will be forwarded to an ```Overview ``` page. 
 </br>
 This is normally where you can see already existing clusters. In your case however, this should still be empty. Here you can see a ```create cluster``` button. By clicking it you will be forwarded to a window trying to sell you a chargeable plan. Click ```discard draft``` and select free, since a free cluster is ideal for experimenting in a limited sandbox. Now click ```create cluster```.
