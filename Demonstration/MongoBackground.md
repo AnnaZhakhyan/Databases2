@@ -61,3 +61,84 @@ MongoDB remains at the forefront of NoSQL databases, providing a scalable and fl
 -	https://www.geeksforgeeks.org/mongodb-architecture/
 -	https://www.techtarget.com/searchdatamanagement/definition/MongoDB
 -	https://www.mongodb.com/resources/products/capabilities/features
+
+
+
+
+	<br/>	<br/>
+	### Info:	<br/>
+MongoDB was initially built with the cloud in mind
+ 	<br/>	<br/>
+MongoDB documents are formatted in BSON (an extended Binary form of JSON) 
+	<br/>	<br/>
+ High availability and easy scalability through distributed workloads
+
+		
+	<br/>	<br/>
+###	What is a cluster ? 	<br/>
+	<br/>
+=> clusters can refer to two different architectures	<br/>
+				<br/>
+1. Replica Set: group of one or more servers containing the exact copy of the data.	<br/>
+					-> High availability and redundancy	<br/>
+	<br/>
+	<br/>
+ensures replication is enforced by constantly copying Operations log (Oplog) of primary server	<br/>
+	<br/>
+possible to have one or two, recommended minimum is 3	<br/>
+				<br/>
+2. Sharded Cluster:  distributes large datasets across multiple shards (servers) to improve performance for both read and write operations	<br/>
+					-> horizontal Scaling	<br/>
+	<br/>
+=> each shard contains own replica sets ( more than one router or configuration server recommended for high availability)	<br/>
+						<br/>
+	
+<br/>
+			
+When a read or write operation is performed on a collection, the client sends the request to a router (mongos). 	<br/>
+The router will then validate which shard the data is stored in via the configuration server and send the requests to the specific cluster.	<br/>
+				
+<br/>
+in Distributed applications, due to data locality, a replica set on a different server, next to fault tolerance,
+				 can handle read operations and thereby increase availability and durability
+	<br/>	<br/>	<br/>
+Primary Node: Handles all write operations	<br/>
+Secondary Nodes: continuously replicate primary node.	<br/>
+	<br/>
+
+### What is the Oplog ?
+	
+ <br/>
+ => is a special capped collection that keeps a rolling record of all operations that modify the data for a specified amount of hours<br/>
+ 	<br/>
+ unlike other capped collections, can dynamically resize configured size limit, to avoid deleting commits up to the maximum configured size	<br/>
+	<br/>
+ => By default, tries to delete oldest and always keep max size
+			
+<br/>	
+<br/>Default Oplog size: 5% of physical memory when self managed deployment, otherwise 5% free disk space
+<br/>	MacOS: 192MB
+
+<br/>	<br/>
+MongoDB applies DB operations on primary and then records operations on primary ’s oplog.  	<br/>
+secondary members copy and apply these operations (asynchronously). 	<br/>
+All secondary members contain a copy of the oplog, which allows them to maintain current state of DB. 	<br/>
+<br/>	<br/>
+
+### What is an Election Process ?	<br/>
+=> process where members of a replica set select a primary on startup and in the event of a failure.	<br/>
+ 	<br/>
+		When primary node becomes unavailable, replica set initiates election to select new primary from among secondary’s.	<br/>
+			Election can be triggered by:	<br/>
+		 &nbsp;&nbsp;		- Primary node failure	<br/>
+			&nbsp;&nbsp; 	- timeout for >10 seconds (default, can be configured ) 	<br/>
+			&nbsp;&nbsp; 	- Addition of new nodes to replica set (research needed )	<br/>
+			&nbsp;&nbsp; 	- Initial replica set configuration	<br/>
+			&nbsp;&nbsp; 	- planned maintenance operations 	<br/>
+				
+		
+
+
+
+
+
