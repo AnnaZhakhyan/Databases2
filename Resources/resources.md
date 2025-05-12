@@ -1,5 +1,6 @@
 ### General Sources: 	
 [Glossary](https://www.mongodb.com/docs/manual/reference/glossary/)
+
 [General terms](https://www.techtarget.com/searchdatamanagement/definition/MongoDB)
 
 ### CAP in Mongodb
