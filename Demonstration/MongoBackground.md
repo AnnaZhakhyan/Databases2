@@ -74,9 +74,9 @@ MongoDB documents are formatted in BSON (an extended Binary form of JSON)
  High availability and easy scalability through distributed workloads
 
 		
-	<br/>	<br/>
+<br/>	<br/>
 ###	What is a cluster ? 	<br/>
-	<br/>
+<br/>
 => clusters can refer to two different architectures	<br/>
 				<br/>
 1. Replica Set: group of one or more servers containing the exact copy of the data.	<br/>
