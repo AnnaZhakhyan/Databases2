@@ -24,7 +24,7 @@ Select the ``` Load a Sample Dataset ``` option. After again click the option ``
 
 
 ## Sharding a Cluster
-This is unfortunately a paid feature, but can is explained [here](https://www.mongodb.com/docs/manual/tutorial/deploy-shard-cluster/#enable-sharding-for-a-database) in detail
+This is unfortunately a paid feature, but can is explained [here](https://www.mongodb.com/docs/manual/tutorial/deploy-shard-cluster/#enable-sharding-for-a-database) in detail.
 
 ## Aggregation Pipelines
 Even though it can be done just as well in Atlas, I will use Compass for this. Everything remains the same on Atlas. 
@@ -38,7 +38,6 @@ For our example we will query for total sales per item.
  With the preview activated you should see the results to the right. 
 </br></br>
 Add another stage and select ```$group``` in the dropdown, which groups the unwound documents and for each group execute code. Here we insert:</br>
-
 ```
 {
   _id: "$items.name",
@@ -47,8 +46,9 @@ Add another stage and select ```$group``` in the dropdown, which groups the unwo
   }
 }
 ```
+
+Here we determine to group the results by item names and calculate their total sales. However, this still does not look nice with the _id and totalSold, which is why we are creating another stage, and select ```$project``` from the dropdown. $project reshapes the output document to include or exclude certain fields for clarity. Here we fill in
 </br>
-Here we determine to group the results by item names and calculate their total sales. However, this still does not look nice with the _id and totalSold, which is why we are creating another stage, and select ```$project``` from the dropdown. $project reshapes the output document to include or exclude certain fields for clarity. Here we fill in </br>
 
 ```
 {
@@ -57,7 +57,6 @@ Here we determine to group the results by item names and calculate their total s
   sales: "$totalSold"
 }
 ```
-</br>
 Now the preview results already look better with item and sales. 
 However, you will notice, the results are still unsorted, so we add another stage and select ```$sort``` and enter this in the field:</br>
 
@@ -66,11 +65,12 @@ However, you will notice, the results are still unsorted, so we add another stag
   sales: -1
 }
 ```
-</br>
 the -1 sorts in descending order, a 1 in ascending. Alternatively totalSold also has the same effect.  As you can see in the preview, the results are now nicely formatted and sorted. Before clicking ```run ``` to see all results, save the queries and name it. 
-</br></br>
+
+  
 To get information helping you to optimise queries you can select Explain.
-</br></br>
+
+  
 Congratulations! You now have created and saved an aggregation.
 
 </br></br>
