@@ -2,6 +2,9 @@
 
 #### General Sources: 	
 [Glossary](https://www.mongodb.com/docs/manual/reference/glossary/)
+[techtarget article](https://www.techtarget.com/searchdatamanagement/definition/MongoDB)
+[features page of MongoDB](https://www.mongodb.com/resources/products/capabilities/features)
+
 
 [General terms](https://www.techtarget.com/searchdatamanagement/definition/MongoDB)
 
@@ -26,3 +29,9 @@
 [Replica Set Elections](https://www.mongodb.com/docs/manual/core/replica-set-elections/)
 <br/><br/><br/><br/><br/>
 [Back to README](https://github.com/AnnaZhakhyan/Databases2/blob/main/README.md)
+
+
+
+
+
+
