@@ -2,7 +2,11 @@
 
 #### General Sources: 	
 [Glossary](https://www.mongodb.com/docs/manual/reference/glossary/)
+
+  
 [techtarget article](https://www.techtarget.com/searchdatamanagement/definition/MongoDB)
+
+  
 [features page of MongoDB](https://www.mongodb.com/resources/products/capabilities/features)
 
 
