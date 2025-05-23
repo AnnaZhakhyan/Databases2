@@ -12,6 +12,8 @@
 
 [General terms](https://www.techtarget.com/searchdatamanagement/definition/MongoDB)
 
+[Benchmarks](https://info.enterprisedb.com/rs/069-ALB-339/images/PostgreSQL_MongoDB_Benchmark-WhitepaperFinal.pdf)
+
 #### CAP in Mongodb
 [Forum Discussion with resources](https://www.mongodb.com/community/forums/t/q-about-mongodbs-cap/150499/2)
 
